@@ -1,5 +1,5 @@
 {
-    "name": "react-native-media-recorder",
+    "name": "react-native-mediarecorder",
     "version": "1.0.0",
     "main": "src/index.js",
     "description": "A React Native module for streaming microphone audio using a React Hook",
