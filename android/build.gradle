@@ -1,0 +1,64 @@
+buildscript {
+    ext {
+        kotlinVersion = "1.9.0"  // Use a recent stable Kotlin version
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+        }
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+    maven {
+        url 'https://www.jitpack.io'
+    }
+}
+
+dependencies {
+    implementation 'com.facebook.react:react-native:+'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+}
+// apply plugin: 'com.android.library'
+
+// android {
+//     compileSdkVersion 30
+//     defaultConfig {
+//         minSdkVersion 21
+//         targetSdkVersion 30
+//     }
+// }
+
+// dependencies {
+//     implementation 'com.facebook.react:react-native:+'
+// }
+
+// buildscript {
+//     ext {
+//         kotlinVersion = "1.5.0"  // Adjust to your Kotlin version
+//     }
+//     dependencies {
+//         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+//     }
+// }
+// apply plugin: 'kotlin-android'

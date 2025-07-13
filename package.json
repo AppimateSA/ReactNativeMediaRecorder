@@ -1,0 +1,25 @@
+{
+    "name": "react-native-media-recorder",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "description": "A React Native module for streaming microphone audio using a React Hook",
+    "keywords": [
+        "react",
+        "react-native",
+        "microphone",
+        "camera",
+        "audio",
+        "video",
+        "stream",
+        "typescript"
+    ],
+    "peerDependencies": {
+        "react": ">=19.1.0",
+        "react-native": ">=0.80.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "MIT"
+}
